@@ -1,0 +1,6 @@
+{
+  "name": "GARCHAVPN",
+  "description": "Сверхбыстрый и безопасный VPN-клиент с серверами для защиты публичного Wi-Fi и split-tunneling маршрутизации для белых списков.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

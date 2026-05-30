@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-garcha-dark: #070913;
+  --color-garcha-card: #0d1222;
+  --color-garcha-lightcard: #151c33;
+  --color-garcha-border: #1e294d;
+  --color-garcha-accent: #0ea5e9;
+  --color-garcha-flame: #38bdf8;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.35));
+    opacity: 0.95;
+  }
+  50% {
+    filter: drop-shadow(0 0 35px rgba(56, 189, 248, 0.75));
+    opacity: 1;
+  }
+}
+
+@keyframes float-fire {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.02);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s infinite ease-in-out;
+}
+
+.animate-float-fire {
+  animation: float-fire 4s infinite ease-in-out;
+}
+
+/* Custom scrollbar for sleek dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070913;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e294d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
